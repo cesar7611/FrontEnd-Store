@@ -1,12 +1,12 @@
 :root {
     --primario: #9c2780;
     --primarioOscuro: #891190;
-    --secundario: #ffce00
+    --secundario: #ffce00;
     --secundarioOscuro: rgb(233,287,2);
     --blanco: #fff;
     --negro: #000;
 
-    --fuentePrincipal: 'Staatliches', cursive:
+    --fuentePrincipal: 'Staatliches', cursive;
  }
 
  html {
@@ -57,4 +57,31 @@ h2 {
 }
 h3 {
     font-size: 2.4rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header_logo {
+    margin: 3rem 0;
+}
+/** Navegacion **/
+.navegacion {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /** separa el texto**/
+
+    
+}
+.navegacion_enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+}
+.navegacion_enlace:hover {
+    color: var(--secundario);
 }
